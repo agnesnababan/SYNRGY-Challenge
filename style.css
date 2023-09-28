@@ -1,0 +1,121 @@
+body{
+    font-family: Helvetica;;
+}
+h2{
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.btn.btn-success{
+    border-radius: 2px;
+    background: var(--primary-lime-green-04, #5CB85F);
+}
+nav, .hero{
+    background: #F1F3FF;
+}
+
+.services-img, .hero-img{
+    width: 100%;
+}
+.img-services, .car-img{
+    width: 100%;
+}
+.title-why-us, .title-testimonial{
+    text-align: center;
+}
+
+.item{
+    border-radius: 8px;
+    background: #F1F3FF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.img-profil{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.owl-carousel .rate-testi img{
+    width: 5rem;
+}
+
+.mulai-sewa{
+    color: #FFFF;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    background: var(--primary-dark-blue-04, #0D28A6);
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.text-mulai-sewa{
+    padding:3rem; 
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.text-mulai-sewa h2{
+    font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+.text-mulai-sewa p{
+    font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+}
+
+@media (max-width: 576px) {
+    .offcanvas.offcanvas-end{
+        width: 50% !important;
+    }
+
+    .testimonial{
+        margin: 1rem;
+    }
+    .owl-carousel .gambar{
+        width: 5rem;
+    }
+    .owl-carousel .rate-testi img{
+    width: 8rem;
+    padding: 1rem;
+    margin-left: 30%;
+    }
+
+    .mulai-sewa{
+        padding: 1rem !important;
+        margin: 1rem !important;
+    }
+    .title-faq{
+        text-align: center;
+    }
+}
+
+@media (min-width:580px) and (max-width: 768px) {
+    .owl-carousel .rate-testi img{
+    width: 8rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    }
+
+    .owl-carousel .item{
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .owl-carousel .rate-testi img{
+    width: 8rem;
+    margin-left: 3rem;
+    padding: 1rem;
+    }
+}
