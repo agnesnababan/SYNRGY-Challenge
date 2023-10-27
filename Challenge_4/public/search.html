@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binar Car Rental</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="filter" id="filter" onclick="inactiveDarkBackground()"></div>
+      <section class="container-fluid bg-body-tertiary" id="hero">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div id="logo">
+                <img
+                  src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656404/logo_upxljj.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="collapse navbar-collapse d-flex justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Why Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-success" id="register">
+                      Register
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="row align-items-center pt-3">
+          <div class="col ms-5">
+            <div class="container">
+              <div id="heading">
+                <h1>Sewa & Rental Mobil Terbaik di kawasan Toba</h1>
+              </div>
+
+              <div id="text">
+                <p>
+                  Selamt datang di Binar Car Rental. Kami menyediakan mobil
+                  kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                  kebutuhanmu untuk sewa mobil selama 24 jam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <img
+              src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656392/img_car_udlfpv.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="search-car">
+        <div id="search" class="container border rounded p-3 mt-2 col-10">
+          <div class="row align-items-center">
+            <div class="col-sm-2 m-3">
+              <label for="specificSizeSelect">Tipe Driver</label>
+              <select class="form-select" id="specificSizeSelect">
+                <option selected>Pilih Tipe Driver</option>
+                <option value="true">Dengan Supir</option>
+                <option value="false">Tanpa Supir (Lepas Kunci)</option>
+              </select>
+            </div>
+            <div class="col-sm-2 m-2">
+              <label for="specificSizeSelect">Tanggal</label>
+              <input type="date" class="form-control" id="inputTanggal" />
+            </div>
+            <div class="col-sm-2 m-2">
+              <label for="specificSizeSelect">Waktu Jemput/Ambil</label>
+              <input type="time" class="form-control" id="inputWaktu" />
+            </div>
+            <div class="col-sm-3 m-2">
+              <label for="specificSizeInputGroupUsername"
+                >Jumlah Penumpang (Optional)</label
+              >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPenumpang"
+                  placeholder="Jumlah Penumpang"
+                />
+                <div class="input-group-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-people"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div>
+                <button id="load-btn" class="btn btn-success" onclick="car.filter();">
+                  Cari Mobil
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5 col-md-9">
+          <div id="cars-container" class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-3">
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <p>Jalan Suryono No. 161 Mayangan Kota Probolonggo 672000</p>
+              <p>binacarrental@gmail.com</p>
+              <p>081-233-334-808</p>
+            </div>
+            <div class="col">
+              <p>Our services</p>
+              <p>Why Us</p>
+              <p>Testimonial</p>
+              <p>FAQ</p>
+            </div>
+            <div class="col">
+              <div>
+                <p>Connect with us</p>
+              </div>
+              <div class="justify-content-between" id="media-social">
+                <img
+                  src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656511/icon_facebook_vndlzt.svg"
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656511/icon_instagram_eizzcv.svg"
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656513/icon_twitter_zwdypb.svg"
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656511/icon_mail_jee2qq.svg"
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656513/icon_twitch_mvi43n.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col">
+              <p>Copyright Binar 2022</p>
+              <img
+                src="https://res.cloudinary.com/dbsnmbhhl/image/upload/v1694656404/logo_upxljj.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- script bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script Website -->
+    <script src="./scripts/search.js"></script>
+  </body>
+</html>
